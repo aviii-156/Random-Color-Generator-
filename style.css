@@ -27,8 +27,10 @@ h1{
     position: relative;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #5f3b00;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.29);
+    background: linear-gradient(135deg, #ff6a88, #9b5de5);
+    -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.15);
 } 
 h1::after {
     content:"";
