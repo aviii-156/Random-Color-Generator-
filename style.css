@@ -9,6 +9,7 @@
 }
 body{
     background: linear-gradient(135deg, #fff1a8, #ffe259);
+    transition: background 0.8s ease;
     display: flex;
     justify-content: center;
     align-items: center;

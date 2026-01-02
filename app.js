@@ -43,7 +43,10 @@ function generatePalette() {
   }
 
   updatePaletteDisplay(colors);
-}
+
+  // Update page background with a gradient using generated colors
+  document.body.style.background = `linear-gradient(135deg, ${colors.join(', ')})`;
+} 
 
 function generateRandomColor() {
   const letters = "0123456789ABCDEF";
