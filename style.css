@@ -1,0 +1,118 @@
+/*BASIC PRESET STYLES*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    font-family: "Oswald", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background: linear-gradient(135deg, #fff1a8, #ffe259);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding:20px;
+}
+.container{
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+h1{
+    position: relative;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #5f3b00;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.29);
+} 
+h1::after {
+    content:"";
+    position: absolute;
+    bottom: -0.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 4px;
+    display: block;
+    background-color: #080808;
+    border-radius: 2px;
+
+}
+#generate-btn{
+    background: linear-gradient(45deg,#667eea,#764ba2);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-size: 1.1rem;
+    transition: background 0.4s ease;
+}
+#generate-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 6px 20px rgba(102,126,234,0.5);
+}
+#generate-btn:active{
+    transform:translateY(0px);
+}
+.palette-container{
+    display: grid;
+    gap:1rem;
+    grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
+
+}
+.color-box{
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    padding: 1px;
+    text-align: center;
+}
+.color-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.color{
+    height:120px;
+    cursor: pointer;
+
+
+
+}
+.color-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: #f9f9f9;
+}
+.hex-value{
+    font-weight: 600;
+    
+    letter-spacing: 0.5px;
+}
+.copy-btn{
+    cursor: pointer;
+    color: #333;
+    transition: color 0.2s ease;
+}
+.copy-btn:hover{
+    color: #fa4747;
+}
+@media (max-width:768px) {
+    .palette-container{
+        grid-template-columns:repeat(auto-fit, minmax(100px,1fr));
+    }
+    
+}
