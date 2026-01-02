@@ -1,7 +1,10 @@
 # Random-Color-Generator-
 A simple and interactive web project built using HTML, CSS, and JavaScript that generates random colors on each click. 🚀 This project strengthens core JavaScript concepts like DOM manipulation, event handling, functions, and Math.random(), while providing a visually engaging user experience.
+
+
+
 prevew link = 
-👉 [Click here to visit the project]([https://your-link-here.com](https://aviii-156.github.io/Random-Color-Generator-/))
+<a href="https://aviii-156.github.io/Random-Color-Generator-/">Visit Website</a>
 
 
 
